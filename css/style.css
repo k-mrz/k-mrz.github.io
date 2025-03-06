@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Orbitron", serif;
+  height: 100%;
+  background-image: url('../img/newtabbg-53.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+.head {
+  padding: 0.3rem 0;
+}
+.ta {
+  text-decoration: underline #c3d7ff;
+  color: #158;
+}
+#na {
+  color: orangered;
+}
+.links li a {
+  font-size: 1.2rem;
+  color: #c3d7ff;
+  text-decoration: 1px solid underline #cdf;
+}
+li {
+  list-style: none;
+  margin-bottom: 0.2rem;
+}
+.offset {
+  max-width: 20em;
+  font-size: 1.1rem;
+  color: #157;
+}
