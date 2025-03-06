@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="uses.css/uses.css">
+    <title>Uses</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <header>
+          <h1>
+            <i><a href="">[kmr]~>></a><a class="uses" href="#">uses</a></i>
+          </h1>
+        </header>
+      </div>
+      <article>
+        <h1 class="m-title">
+          Why I use what I use
+        </h1>
+        <p>
+        My computing / development stack is a mix of circumstance and personal preference. Hopefully, I can get rid of much of the circumstance part and have more freedom to act independently, to prefer.So for the hardware part, I just have to suck it up and adapt to the suck. On the software side, I can say that the more I am well versed, the more minimal my stack becomes and the more minimalist I become. Frome VSCode to Neovim, from rufus and .. to simple dd, from Peazip to tar and bzip2 and so on and so forth. There's the ideological side to my software choices as I value having low-level software being minimal (systemd vs runit/dinit etc.) as well as apolitical software outside the bounds of the politics relevant to FOSS and the movement but I understand that if I go down a rabbit hole, I might reach a breaking point where I end up with nothing to use so I'm pragmatic and look at the technical side. Portability is also a big factor in that free software I use should be available on other FOSS operating systems besides Linux and not Linux-specific. I don't want to limit myself to Linux which frankly has accumulated monopolistic tendencies where RedHat, FreeDesktop and the big three (RPM-based distros Fedora & RedHat, Debian, Arch) can make decisions favouring Linux at the expense of other FOSS systems. And OpenBSD is where my eyes are at. Yeah, FFS2 is not to the level of ext4 and other issues but my needs have become so small that OpenBSD can actually be a daily driver for me. And progress is being made on the OpenBSD desktop. So by 9.0, a lot will be smoothened out.
+        </p>
+        <hr>
+        <div class="dl">
+          <dl>
+            <dt>Machine</dt>
+            <dd>
+              It's a family machine but this HP Elitebook 840 G1 is mostly used by me (mainly as a working environment for coding-related stuff). It has an Intel i5-4310 CPU, 16 gigs of ram and a hard drive of 468GB. It's thin (search this) for a business laptop but 21mm thick is thick in the presence of most current laptops on the market. Very notable is the trackpoint which I find very resourceful. So yeah, thinkpad at home.
+            </dd>
+            <dt>Operating System</dt>
+            <dd>
+              I mainly run Void Linux which is an independent Linux distribution using runit and the option to use musl libc instead of glibc(which is the version I use). In my experience, Void is Arch without the suck of it. There's no time I've run into dependency conflicts or wierd stuff like '/usr/lib/tevent.so is already in the filesystem'. It's engineered with stability in mind and doesn't use systemd. More minimal than Arch. I only ever used vanilla Arch as a WSL distro but EndeavourOS is as close to Arch as you can get; it's just a few QoL hooks on top of Arch. My dream desktop is OpenBSD.
+            </dd>
+            <dt>Window Manager and Desktop Environment</dt>
+            <dd>
+              i3 is my Window manager of choice and XFCE is the default desktop environment on Void. No Wayland sessions, just _x11, the standard windowing system for all of Unix and not Linux-specific like Wayland. And a Linux-specific graphics layer cannot be the future of the BSD or Unix desktops. That has come to mean mine also.
+            </dd>
+            <dt>Terminal and Shell Utilities</dt>
+            <dd>
+              My terminal of choice is Kitty by Kovidgoyal. It's available on Linux, MacOS, FreeBSD and OpenBSD; in short, it's very cross-platform. And that's part of how I dropped Wezterm. Kitty renders fonts better than Wezterm out of the box. It has a minimal user interface by default. It's also how Wezterm gets to render images as Kitty is where the Kitty Graphics protocol came from. It requires minimal configuration since one can use the Kitten command or the Kitty+(option eg list-fonts) command to easily do the configuration with some clicks. It just hits the right spot for me.
+              <br>
+              On the terminal I almost always escalate priviledges with <code>doas</code> from the Opendoas package and it's become muscle memory. I list stuff with <code>lsd</code> which is a fancified ls with icons and other modernisms. I change directories with zoxide (<code>z</code>), which remembers the directories you entered or z'd into, allowing for arbitrary changedirs. I mainly mux with zellij but sometimes use tmux. Zellij allows for session management without configuration; it's more successful at what it's trying to do than Helix is IMHO. That means I don't have to go deep into a rabbit hole of how I can save my Neovim sessions. 
+            </dd>
+            <dt>Browser(s)</dt>
+            <dd>
+              My main browser is Zen Browser which is a firefox fork with a nice easthetic interface, couple of very resourceful quality of life features and hardware optimizations. The option to completely hide the chrome of a firefox-based browser is a killer feature together with workspaces and glance(a way to preview URLs without actually changing the current site). I can't forget Zen Mods which lets one customize the browser's look and feel on a click with the customizations being persistent even after a browseer update I can't forget Zen Mods which lets one customize the browser's look and feel on a click with the customizations being persistent even after a browseer update. I also make use of Firefox which is the most cross-platform browser on the planet right now. I don't have it customized except for some privacy and preference-based extensions (Ublock Origin, ClearURLS, Distraction-Free YouTube, Ultimadark, Brave Search, YouTube Search Engine). Least is Vivaldi which is the emacs of browsers. It's mainly works as a backup browser and the chromium browser to test my website code. The only reason my use of it has grown is because of school but it's a good browser, just sometimes slower epsecially on YT.
+            </dd>
+            <dt>Note-taking</dt>
+            <dd>
+              After watching James Scholz and finding out about how cool org-mode is, I have been making use of Emacs. Being a Neovim and Helix user, I opted for a framework on top of Emacs called Doom Emacs which has Vim bindings and other quality of life addons that remove the need to go into a rabbit hole of configuring vanilla Emacs so switching becomes dead easy, provided Savannah is up and running. I do want to replace the bindings to fit my Helix sensibilities which will require more discovery of Doom Emacs and configuration.
+            </dd>
+          </dl> 
+        </div>
+      </article>
+      <div class="foot">
+        <footer>
+          <p>
+          Powered by
+          <a href="https://voidlinux.org">Void Linux</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+ </body>
+</html>
